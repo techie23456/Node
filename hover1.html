@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+#container {
+  top:1px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+  padding-left: 10px;
+  
+  
+ 
+}
+#container1{
+  left:211px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+  padding-left: 10px;
+  background: red;
+  
+
+}
+#container2{
+  top:0;
+  left:0px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+  padding-left: 10px;
+  
+
+}
+
+#container3{
+  top:-605px;
+  left:422px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+  padding-left: 10px;
+  
+
+}
+
+#container4{
+  top:-405px;
+  left:422px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+  padding-left: 10px;
+  
+
+}
+
+#cube {
+  width: 190px;
+  height: 190px;
+  position: absolute;
+        top: 50%;
+        left: 50%;
+        /* transform: translateX(0px); */
+  transform: translate(-50%, -50%);
+  
+  
+ 
+  transition: 3s;
+
+
+ 
+}
+
+#cube1 {
+  width: 190px;
+  height: 190px;
+  position: absolute;
+        top: 50%;
+        left: 50%;
+        /* transform: translateX(0px); */
+  transform: translate(-50%, -50%);
+  
+ 
+  transition: 3s;
+
+
+ 
+}
+
+
+#cube2 {
+  width: 190px;
+  height: 190px;
+  position: absolute;
+        top: 50%;
+        left: 50%;
+        /* transform: translateX(0px); */
+  transform: translate(-50%, -50%);
+  
+ 
+  transition: 3s;
+
+
+ 
+}
+
+#cube3 {
+  width: 190px;
+  height: 190px;
+  position: absolute;
+        top: 50%;
+        left: 50%;
+        /* transform: translateX(0px); */
+  transform: translate(-50%, -50%);
+  transition: 3s;
+}
+
+#cube4 {
+  width: 190px;
+  height: 190px;
+  position: absolute;
+        top: 50%;
+        left: 50%;
+        /* transform: translateX(0px); */
+  transform: translate(-50%, -50%);
+  transition: 3s;
+}
+#cube img{
+    width:100%;
+    
+}
+
+#cube1 img{
+    width:100%;
+   transform:  scale(2);
+    
+}
+
+#cube2 img{
+    width:100%;
+    
+}
+
+#cube3 img{
+    width:100%;
+    
+}
+
+#cube4 img{
+    width:100%;
+    
+}
+/* direct child */
+#container:hover > #cube img{
+   /* background-color: red; */
+  filter: grayscale(100%);
+  /* transform: translateX(200px); */
+  transform: scale(2);
+  
+  transition:all 3s linear ;
+  
+}
+
+#container1:hover > #cube1 img{
+    background-color: red; 
+  filter: grayscale(100%);
+  /* transform: translateX(200px); */
+  transform: scale(1);
+  transition:all 3s linear ;
+  
+}
+
+#container2:hover > #cube2 img{
+    background-color: red; 
+  filter: grayscale(100%);
+  /* transform: translateX(200px); */
+  transform: rotate(360deg);
+  transition:all 3s linear ;
+  
+}
+
+#container3:hover > #cube3 img{
+    background-color: red; 
+  filter: grayscale(100%);
+  transform: translateX(200px);
+  transition:all 3s linear ;
+  
+}
+
+#container4:hover > #cube4 img{
+    background-color: red; 
+  filter: grayscale(100%);
+  /* transform: translateX(200px); */
+  transition:all 0.1s linear ;
+  
+}
+
+</style>
+</head>
+<body>
+
+<div id="container"><h1>Welcome</h1>
+  <div id="cube">
+    <img src="images/1.webp" width="190" height="190" alt="">
+  </div>
+</div>
+
+<div id="container1"><h1>Welcome</h1>
+  <div id="cube1">
+    <img src="images/1.webp" width="190" height="190" alt="">
+  </div>
+</div>
+
+<div id="container2"><h1>Welcome</h1>
+  <div id="cube2">
+    <img src="images/1.webp" width="190" height="190" alt="">
+  </div>
+</div>
+
+<div id="container3"><h1>Welcome</h1>
+  <div id="cube3">
+    <img src="images/1.webp" width="190" height="190" alt="">
+  </div>
+</div>
+
+<div id="container4"><h1>Welcome</h1>
+  <div id="cube4">
+    <img src="images/1.webp" width="190" height="190" alt="">
+  </div>
+</div>
+
+
+
+</body>
+</html>
+

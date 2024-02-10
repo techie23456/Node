@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random image color</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		#divID {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100vh;
+			mix-blend-mode: hue;
+		}
+
+		body {
+			overflow: hidden;
+		}
+
+		img {
+			
+			width: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="form-group">
+		<select class="form-control" id="UserSelect">
+		  <option value="1">Rock</option>
+		  <option value="2">Paper</option>
+		  <option value="3">Scissors</option>
+		</select>
+	  </div>
+	<img src=
+"https://images.moneycontrol.com/static-mcnews/2018/06/maruti-alto-770x433.jpg?impolicy=website&width=770&height=431">
+<!-- https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png -->
+
+<!-- https://stimg.cardekho.com/car-images/carexteriorimages/large/Maruti/Maruti-Alto/front-left-side-047.jpg -->
+	<div id="divID"></div>
+	<script>
+		const divElem = document.getElementById("divID");
+		function randomcolor() {
+			return Math.floor(Math.random() * 255);
+		}
+		divElem.addEventListener('click', () => {
+			divElem.style.backgroundColor = "green"
+            // 'rgba('
+			// 	+ randomcolor() + ',' + randomcolor()
+			// 	+ ',' + randomcolor() + '\)'
+		});
+	</script>
+</body>
+</html>
+

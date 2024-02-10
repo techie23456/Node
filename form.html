@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bin</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <form action="">
+      <label for="sname">Name</label>
+      <input type="text" id="sname" />
+      <label for ="scountry">Country</label>
+      <select id ="scountry">
+      <option>India</option>
+      <option>Nepal</option>
+      <option>China</option>
+      
+      </select>
+    </form>
+
+    <script>
+      $("#sname , #scountry").focus(function () {
+        $(this).css("background", "green");
+      });
+
+      $("#sname").blur(function () {
+        $(this).css("background", "white");
+      });
+
+      $("#scountry").change(function () {
+        $(this).css("background", "red");
+      });
+      
+    </script>
+  </body>
+</html>
