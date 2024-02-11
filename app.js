@@ -51,8 +51,12 @@ app.get('/form',(req,res)=>{
       });
 
       app.get('/hover',(req,res)=>{
-         res.sendFile(__dirname + "/hover.html");
+         res.sendFile(__dirname + "/Myhover.html");
          });
+
+         app.get('/',(req,res)=>{
+            res.sendFile(__dirname + "/Myhover.html");
+            });
 
 app.listen(port,'0.0.0.0',function(){
    console.log('The server is running, ' +
